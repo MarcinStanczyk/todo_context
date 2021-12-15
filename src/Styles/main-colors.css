@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+:root {
+    --main-text-color: white;
+    --main-bg-color: #493434;
+    --seccond-bg-color: #252424;
+    --tan-color: #C3A1A0;
+    --font-Lato: 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}

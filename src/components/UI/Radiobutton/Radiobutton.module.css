@@ -1,0 +1,60 @@
+.option{
+  background: #fff;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+
+.option .dot{
+  width: 0.8em;
+  height: 0.8em;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+
+.option .dot::before{
+  position: absolute;
+  content: "";
+  top: 0.2em;
+  left: 0.2em;
+  width: 0.4em;
+  height: 0.4em;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.5s ease;
+}
+
+.option span{
+   font-size: 1em;
+   color: #808080;
+ }
+
+input[type="radio"]{
+  display: none;
+}
+
+
+input[name="select"]:checked + .option {
+  border-color: #0069d9;
+  background: #0069d9;
+}
+input[name="select"]:checked + .option .dot {
+  background: #fff;
+}
+input[name="select"]:checked + .option .dot::before {
+  opacity: 1;
+  transform: scale(1);
+}
+input[name="select"]:checked + .option span {
+  color: #fff;
+}

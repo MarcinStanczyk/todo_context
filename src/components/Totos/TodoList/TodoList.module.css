@@ -1,0 +1,17 @@
+@import '../../../Styles/main-colors.css';
+
+.todoList {
+  padding: 0 10%;
+  background-color: var(--seccond-bg-color);
+  color: var(--main-text-color);
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+
+.todoList ul {
+  list-style: none;
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+}

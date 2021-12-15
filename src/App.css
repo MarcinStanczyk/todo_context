@@ -1,5 +1,30 @@
+@import './Styles/main-colors.css';
+
 .App {
   text-align: center;
+}
+
+.LayoutElement {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--seccond-bg-color);
+}
+
+.TodoList {
+  grid-column: 1 / span 2;
+  border: 1px solid red;
+}
+.b {
+  grid-column: 3 ;
+  grid-row: 1 / span 2;
+}
+.c {
+  grid-column: 1 ;
+  grid-row: 2 ;
+}
+.d {
+  grid-column: 2 ;
+  grid-row: 2 ;
 }
 
 .App-logo {
